@@ -80,3 +80,27 @@ function displayHidden(fieldName, className) {
     }
 }
 
+
+// Apply discount 15% and 20%
+function discountCount(params) {
+    const discountCoupon = params.parentNode.children[0].value;
+
+    if(discountCoupon === 'NEW15') {
+        const discount = getValueFromField('total-price') * 0.15;
+        updateFieldInnerText('discount', discount);
+        updateFieldInnerText('grand-total', getValueFromField('total-price') - discount);
+        displayHidden(params.parentNode, 'Hidden');
+        displayHidden('discount-div', 'Display');
+    }
+    else if(discountCoupon === 'COUPLE20') {
+        const discount = getValueFromField('total-price') * 0.20;
+        updateFieldInnerText('discount', discount);
+        updateFieldInnerText('grand-total', getValueFromField('total-price') - discount);
+        displayHidden(params.parentNode, 'Hidden');
+        displayHidden('discount-div', 'Display');
+    }
+    else {
+        const errorModal = document.getElementById('error-modal');
+        errorModal.showModal();
+    }    
+}
