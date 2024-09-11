@@ -403,6 +403,589 @@
             <p class="font-bold text-gray-400">Per Seat</p>
           </div>
         </div>
+
+        <!-- Seats Container -->
+        <div
+          class="ml-5 mr-5 mx-auto md:ml-10 md:mr-10 md:mx-auto lg:ml-28 lg:mr-28 lg:mx-auto lg:px-5 bg-white rounded-xl py-10 flex flex-col lg:flex-row gap-5 md:gap-10 lg:gap-5"
+        >
+          <!-- Seats Plan -->
+          <div class="flex flex-col gap-2 lg:border-r-2 border-dashed px-5">
+            <h1 class="font-xl text-black font-bold mb-2">Select Your Seat</h1>
+
+            <div
+              class="flex flex-row justify-between items-center border-t-2 border-b-2 border-dashed py-2"
+            >
+              <div class="flex flex-row gap-2">
+                <img src="./images/seat-gray.png" alt="" />
+                <p class="font-bold text-gray-500">Available</p>
+              </div>
+
+              <div class="flex flex-row gap-2">
+                <img src="./images/seat-green-filled.png" alt="" />
+                <p class="text-[#1DD100] font-bold">Selected</p>
+              </div>
+            </div>
+
+            <!-- Wheel -->
+            <div
+              class="flex flex-row items-center justify-end h-8 text-center mb-5 mt-2"
+            >
+              <img
+                class="bg-gray-300 px-5 py-1 rounded text-end h-full"
+                src="./images/wheel.png"
+                alt=""
+              />
+            </div>
+
+            <!-- All Seats -->
+            <div class="flex flex-row gap-1 md:gap-[195px] lg:gap-28">
+              <!-- Left Seat -->
+              <div
+                class="flex flex-col text-center justify-center items-center gap-1 md:gap-5"
+              >
+                <!-- A -->
+                <div
+                  class="flex flex-row justify-center items-center gap-1 md:gap-10"
+                >
+                  <p class="font-bold text-gray-400">A</p>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white w-20 disabled:bg-[#1DD100] disabled:text-white btn rounded"
+                  >
+                    A1
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white disabled:bg-[#1DD100] disabled:text-white w-20 btn rounded"
+                  >
+                    A2
+                  </button>
+                </div>
+
+                <!-- B -->
+                <div
+                  class="flex flex-row justify-center items-center gap-1 md:gap-10"
+                >
+                  <p class="font-bold text-gray-400">B</p>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white disabled:bg-[#1DD100] disabled:text-white w-20 btn rounded"
+                  >
+                    B1
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white disabled:bg-[#1DD100] disabled:text-white w-20 btn rounded"
+                  >
+                    B2
+                  </button>
+                </div>
+
+                <!-- C -->
+                <div
+                  class="flex flex-row justify-center items-center gap-1 md:gap-10"
+                >
+                  <p class="font-bold text-gray-400">C</p>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white disabled:bg-[#1DD100] disabled:text-white w-20 btn rounded"
+                  >
+                    C1
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white disabled:bg-[#1DD100] disabled:text-white w-20 btn rounded"
+                  >
+                    C2
+                  </button>
+                </div>
+
+                <!-- D -->
+                <div
+                  class="flex flex-row justify-center items-center gap-1 md:gap-10"
+                >
+                  <p class="font-bold text-gray-400">D</p>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white disabled:bg-[#1DD100] disabled:text-white w-20 btn rounded"
+                  >
+                    D1
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white disabled:bg-[#1DD100] disabled:text-white w-20 btn rounded"
+                  >
+                    D2
+                  </button>
+                </div>
+
+                <!-- E -->
+                <div
+                  class="flex flex-row justify-center items-center gap-1 md:gap-10"
+                >
+                  <p class="font-bold text-gray-400">E</p>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white disabled:bg-[#1DD100] disabled:text-white w-20 btn rounded"
+                  >
+                    E1
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white disabled:bg-[#1DD100] disabled:text-white w-20 btn rounded"
+                  >
+                    E2
+                  </button>
+                </div>
+
+                <!-- F -->
+                <div
+                  class="flex flex-row justify-center items-center gap-1 md:gap-10"
+                >
+                  <p class="font-bold text-gray-400">F</p>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white disabled:bg-[#1DD100] disabled:text-white w-20 btn rounded"
+                  >
+                    F1
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white disabled:bg-[#1DD100] disabled:text-white w-20 btn rounded"
+                  >
+                    F2
+                  </button>
+                </div>
+
+                <!-- G -->
+                <div
+                  class="flex flex-row justify-center items-center gap-1 md:gap-10"
+                >
+                  <p class="font-bold text-gray-400">G</p>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white disabled:bg-[#1DD100] disabled:text-white w-20 btn rounded"
+                  >
+                    G1
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white disabled:bg-[#1DD100] disabled:text-white w-20 btn rounded"
+                  >
+                    G2
+                  </button>
+                </div>
+
+                <!-- H -->
+                <div
+                  class="flex flex-row justify-center items-center gap-1 md:gap-10"
+                >
+                  <p class="font-bold text-gray-400">H</p>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white disabled:bg-[#1DD100] disabled:text-white w-20 btn rounded"
+                  >
+                    H1
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white disabled:bg-[#1DD100] disabled:text-white w-20 btn rounded"
+                  >
+                    H2
+                  </button>
+                </div>
+
+                <!-- I -->
+                <div
+                  class="flex flex-row justify-center items-center gap-1 md:gap-10"
+                >
+                  <p class="font-bold text-gray-400">I</p>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white disabled:bg-[#1DD100] disabled:text-white w-20 btn rounded"
+                  >
+                    I1
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white disabled:bg-[#1DD100] disabled:text-white w-20 btn rounded"
+                  >
+                    I2
+                  </button>
+                </div>
+
+                <!-- J -->
+                <div
+                  class="flex flex-row justify-center items-center gap-1 md:gap-10"
+                >
+                  <p class="font-bold text-gray-400">J</p>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white disabled:bg-[#1DD100] disabled:text-white w-20 btn rounded"
+                  >
+                    J1
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white disabled:bg-[#1DD100] disabled:text-white w-20 btn rounded"
+                  >
+                    J2
+                  </button>
+                </div>
+              </div>
+
+              <!-- Right Seat -->
+              <div
+                class="flex flex-col lg:justify-center lg:items-center gap-1 md:gap-5"
+              >
+                <!-- A -->
+                <div
+                  class="flex flex-row justify-center items-center gap-1 md:gap-10"
+                >
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white w-20 btn rounded disabled:bg-[#1DD100] disabled:text-white"
+                  >
+                    A3
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white w-20 btn rounded disabled:bg-[#1DD100] disabled:text-white"
+                  >
+                    A4
+                  </button>
+                </div>
+
+                <!-- B -->
+                <div
+                  class="flex flex-row justify-center items-center gap-1 md:gap-10"
+                >
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white w-20 btn rounded disabled:bg-[#1DD100] disabled:text-white"
+                  >
+                    B3
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white w-20 btn rounded disabled:bg-[#1DD100] disabled:text-white"
+                  >
+                    B4
+                  </button>
+                </div>
+
+                <!-- C -->
+                <div
+                  class="flex flex-row justify-center items-center gap-1 md:gap-10"
+                >
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white w-20 btn rounded disabled:bg-[#1DD100] disabled:text-white"
+                  >
+                    C3
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white w-20 btn rounded disabled:bg-[#1DD100] disabled:text-white"
+                  >
+                    C4
+                  </button>
+                </div>
+
+                <!-- D -->
+                <div
+                  class="flex flex-row justify-center items-center gap-1 md:gap-10"
+                >
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white w-20 btn rounded disabled:bg-[#1DD100] disabled:text-white"
+                  >
+                    D3
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white w-20 btn rounded disabled:bg-[#1DD100] disabled:text-white"
+                  >
+                    D4
+                  </button>
+                </div>
+
+                <!-- E -->
+                <div
+                  class="flex flex-row justify-center items-center gap-1 md:gap-10"
+                >
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white w-20 btn rounded disabled:bg-[#1DD100] disabled:text-white"
+                  >
+                    E3
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white w-20 btn rounded disabled:bg-[#1DD100] disabled:text-white"
+                  >
+                    E4
+                  </button>
+                </div>
+
+                <!-- F -->
+                <div
+                  class="flex flex-row justify-center items-center gap-1 md:gap-10"
+                >
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white w-20 btn rounded disabled:bg-[#1DD100] disabled:text-white"
+                  >
+                    F3
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white w-20 btn rounded disabled:bg-[#1DD100] disabled:text-white"
+                  >
+                    F4
+                  </button>
+                </div>
+
+                <!-- G -->
+                <div
+                  class="flex flex-row justify-center items-center gap-1 md:gap-10"
+                >
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white w-20 btn rounded disabled:bg-[#1DD100] disabled:text-white"
+                  >
+                    G3
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white w-20 btn rounded disabled:bg-[#1DD100] disabled:text-white"
+                  >
+                    G4
+                  </button>
+                </div>
+
+                <!-- H -->
+                <div
+                  class="flex flex-row justify-center items-center gap-1 md:gap-10"
+                >
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white w-20 btn rounded disabled:bg-[#1DD100] disabled:text-white"
+                  >
+                    H3
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white w-20 btn rounded disabled:bg-[#1DD100] disabled:text-white"
+                  >
+                    H4
+                  </button>
+                </div>
+
+                <!-- I -->
+                <div
+                  class="flex flex-row justify-center items-center gap-1 md:gap-10"
+                >
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white w-20 btn rounded disabled:bg-[#1DD100] disabled:text-white"
+                  >
+                    I3
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white w-20 btn rounded disabled:bg-[#1DD100] disabled:text-white"
+                  >
+                    I4
+                  </button>
+                </div>
+
+                <!-- J -->
+                <div
+                  class="flex flex-row justify-center items-center gap-1 md:gap-10"
+                >
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white w-20 btn rounded disabled:bg-[#1DD100] disabled:text-white"
+                  >
+                    J3
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="text-gray-400 border-0 hover:bg-[#1DD100] hover:text-white w-20 btn rounded disabled:bg-[#1DD100] disabled:text-white"
+                  >
+                    J4
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Money and passengers details -->
+          <div class="flex-grow flex flex-col gap-2 px-5">
+            <h1
+              class="font-xl text-black font-bold border-b-2 border-dashed pb-4"
+            >
+              Pay Grand Total
+            </h1>
+
+            <!-- Calculate Total -->
+            <div class="bg-[#F7F8F8] rounded-lg px-5 py-5 mt-5">
+              <!-- Table -->
+              <div class="overflow-x-auto md:w-[600px] lg:w-full text-center">
+                <table class="table w-full">
+                  <!-- head -->
+                  <thead>
+                    <tr class="text-center">
+                      <th class="font-bold text-lg">
+                        Seat
+                        <span
+                          id="total-selected-seats"
+                          class="text-white bg-[#1DD100] px-3 py-[1px] rounded-md"
+                          >0</span
+                        >
+                      </th>
+                      <th class="font-bold text-lg">Class</th>
+                      <th class="font-bold text-lg">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody id="seats-list"></tbody>
+                </table>
+              </div>
+              <!-- End of Table -->
+
+              <!-- Total Price -->
+              <div
+                class="flex flex-row justify-between md:justify-around lg:justify-around border-t-2 pt-2 mt-5 w-[304px] md:w-full lg:w-full"
+              >
+                <h1 class="font-bold text-black">Total Price</h1>
+                <h1 class="font-bold text-black md:ml-40 lg:ml-32">
+                  BDT <span id="total-price">000</span>
+                </h1>
+              </div>
+              <!-- End of Total Price -->
+
+              <!-- Coupon -->
+              <label
+                id="coupon-div"
+                class="flex items-center gap-2 bg-white text-center justify-center w-[304px] md:w-[480px] md:mx-auto lg:w-96 rounded-xl mt-5"
+              >
+                <input
+                  id="coupon-code"
+                  type="text"
+                  class="grow font-bold m-2 lg:m-4 outline-none"
+                  placeholder="Have any coupon?"
+                />
+                <button
+                  onclick="discountCount(this)"
+                  id="coupon-btn"
+                  class="btn rounded-xl bg-[#1DD100] text-white text-end mr-1 border-2 border-[#1DD100] hover:bg-transparent hover:border-[#1DD100] hover:text-[#1DD100] btn-disabled"
+                >
+                  Apply
+                </button>
+              </label>
+              <!-- End of Coupon -->
+
+              <!-- Discound Price -->
+              <div id="discount-div" class="hidden">
+                <div
+                  class="flex flex-row justify-between md:justify-around border-t-0 pt-2 mt-5 w-[304px] md:w-[480px] md:mx-auto lg:w-96"
+                >
+                  <h1 class="font-bold text-black">
+                    You got a discount of (tk.)
+                  </h1>
+                  <h1 class="font-bold text-black md:ml-40 lg:ml-6">
+                    BDT <span id="discount">000</span>
+                  </h1>
+                </div>
+              </div>
+              <!-- End of Discound Price -->
+
+              <!-- Grand Total -->
+              <div
+                class="flex flex-row justify-between md:justify-around border-t-0 pt-2 mt-5 mb-5 w-[304px] md:w-[480px] md:mx-auto lg:w-96"
+              >
+                <h1 class="font-bold text-black">Grand Total</h1>
+                <h1 class="font-bold text-black md:ml-64 lg:ml-32">
+                  BDT <span id="grand-total">000</span>
+                </h1>
+              </div>
+              <!-- End of Grand Total -->
+            </div>
+            <!-- End of Calculate Total -->
+
+            <!-- Passenger Info -->
+            <div class="w-full border-0">
+              <!-- Name -->
+              <label
+                class="form-control w-full flex flex-col justify-center items-start border-0"
+              >
+                <div class="label">
+                  <span class="font-bold text-black">Passenger Name *</span>
+                </div>
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="Enter your name"
+                  class="grow input input-bordered rounded-lg w-full bg-white"
+                />
+              </label>
+
+              <!-- Mobile Phone -->
+              <label
+                class="form-control w-full flex flex-col justify-center items-start border-0"
+              >
+                <div class="label">
+                  <span class="font-bold text-black">Phone Number *</span>
+                </div>
+                <input
+                  id="phone-number"
+                  type="text"
+                  placeholder="Enter your phone number "
+                  class="grow input input-bordered rounded-lg w-full bg-white"
+                />
+              </label>
+
+              <!-- Email -->
+              <label
+                class="form-control w-full flex flex-col justify-center items-start border-0"
+              >
+                <div class="label">
+                  <span class="font-bold text-black">Email ID *</span>
+                </div>
+                <input
+                  id="email-id"
+                  type="email"
+                  placeholder="Enter your email address"
+                  class="grow input input-bordered rounded-lg w-full bg-white"
+                />
+              </label>
+            </div>
+            <!-- End of Passenger Info -->
+
+            <!-- Next Button -->
+            <button
+              onclick="successBtn(this)"
+              id="next-btn"
+              class="btn rounded-xl bg-[#1DD100] text-white text-end mr-1 border-2 border-[#1DD100] hover:bg-transparent hover:border-[#1DD100] hover:text-[#1DD100] mt-5 font-bold text-lg btn-disabled"
+            >
+              Next
+            </button>
+
+            <!-- Terms and Conditions -->
+            <div
+              class="flex flex-row justify-center items-center gap-5 lg:gap-10 mt-5 lg:text-lg text-gray-500 mb-10"
+            >
+              <a class="underline hover:text-black" href=""
+                >Terms and Conditions</a
+              >
+              <a class="underline hover:text-black" href=""
+                >Cancellation Policy</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- End of Container -->
       </section>
     </main>
     <!-- End of Main Section -->
