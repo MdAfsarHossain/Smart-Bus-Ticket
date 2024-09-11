@@ -134,3 +134,9 @@ function clearAllFields(params) {
         inputField.value = '';
     });
 }
+
+
+// Get value from input field
+function getValueFromInputField(params) {
+    return document.getElementById(params).value;
+}
