@@ -140,3 +140,21 @@ function clearAllFields(params) {
 function getValueFromInputField(params) {
     return document.getElementById(params).value;
 }
+
+
+// Success button
+function successBtn(params) {
+    const name = getValueFromInputField('name');
+    const phoneNumber = getValueFromInputField('phone-number');
+    const emailId = getValueFromInputField('email-id');
+    
+    if(name.length == 0 || phoneNumber.length == 0 || emailId.length == 0) {
+        const inputFieldModal = document.getElementById('input-field-modal');
+        inputFieldModal.showModal();
+        return;
+    }
+
+    const my_modal = document.getElementById('my_modal');
+
+    my_modal.showModal();    
+}
