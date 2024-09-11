@@ -1042,6 +1042,38 @@
       </section>
     </footer>
     <!-- End of Main Section -->
+
+    <!-- Second Modal -->
+    <dialog id="my_modal" class="modal">
+      <div class="modal-box flex flex-col items-center justify-center gap-5">
+        <img src="./images/success.png" alt="" />
+        <div
+          class="flex flex-col gap-1 text-center items-center justify-center"
+        >
+          <h1 class="font-bold text-4xl uppercase text-green-700">Success</h1>
+          <p class="text-black font-bold">
+            Thank you for Booking Our Bus Seats.
+          </p>
+          <p class="text-black font-bold text-xs">
+            We are working hard to find the best service and deals for you.
+          </p>
+          <p class="text-gray-400">
+            Shortly you will find a confirmation in your email.
+          </p>
+        </div>
+
+        <div class="modal-action">
+          <form method="dialog">
+            <button
+              onclick="clearAllFields(this)"
+              class="btn rounded-lg w-full text-white bg-[#27AE60] mt-0 border-2 border-[#27AE60] hover:bg-transparent hover:border-2 hover:text-[#27AE60] hover:border-[#27AE60]"
+            >
+              Continue
+            </button>
+          </form>
+        </div>
+      </div>
+    </dialog>
     <!-- JavaScript -->
     <script src="./js/app.js"></script>
   </body>
