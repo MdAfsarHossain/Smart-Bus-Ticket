@@ -104,3 +104,33 @@ function discountCount(params) {
         errorModal.showModal();
     }    
 }
+
+
+// Clear all fields
+function clearAllFields(params) {
+    totalSelectedSeat = 0;
+    seatResumed = 40;
+
+    // Enable all buttons again
+    const buttons = document.getElementsByTagName("button");
+    
+    for (const button of buttons) {
+        button.disabled = false;
+    }
+
+    document.getElementById('seat-resumed').innerText = seatResumed;
+    document.getElementById('total-selected-seats').innerText = totalSelectedSeat;
+    document.getElementById('total-price').innerText = 0;
+    document.getElementById('grand-total').innerText = 0;
+    document.getElementById('discount').innerText = 0;
+    document.getElementById('seats-list').innerHTML = '';
+    document.getElementById('coupon-btn').classList.add('btn-disabled');
+    document.getElementById('next-btn').classList.add('btn-disabled');
+    document.getElementById('discount-div').classList.add('hidden');
+    document.getElementById('coupon-div').classList.remove('hidden');
+
+    const inputFields = document.querySelectorAll('input');
+    inputFields.forEach((inputField) => {
+        inputField.value = '';
+    });
+}
