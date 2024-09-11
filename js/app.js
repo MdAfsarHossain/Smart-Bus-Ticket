@@ -6,3 +6,9 @@ let seatResumed = 40;
 function updateFieldInnerText(fieldName, value) {
     document.getElementById(fieldName).innerText = value;
 }
+
+
+// Get value from field
+function getValueFromField(fieldName) {
+    return parseFloat(document.getElementById(fieldName).innerText);
+}
