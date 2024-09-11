@@ -30,3 +30,42 @@ function updateSeatsList(seatName) {
     tr.appendChild(td3);
     seatsList.appendChild(tr);
 }
+
+
+// Selects seat 
+function selectSeat(params) {
+    const seatName = params.innerText;
+
+    document.getElementById('next-btn').classList.remove('btn-disabled');
+    
+    params.disabled = true;
+    totalSelectedSeat = totalSelectedSeat + 1;
+    
+    if(totalSelectedSeat === 4) {
+        document.getElementById('coupon-btn').classList.remove('btn-disabled');
+    }
+
+    if(totalSelectedSeat > 4) {
+        const seatFillupError = document.getElementById('seat-fillup-error-modal');
+        seatFillupError.showModal();
+
+        params.disabled = false;
+        totalSelectedSeat = totalSelectedSeat - 1;
+        return;
+    }
+    
+    seatResumed = seatResumed - 1;
+
+    let totalPrice = 550 * totalSelectedSeat;
+
+    const discount = getValueFromField('discount');
+    
+    const grandTotal = totalPrice + discount;
+
+    updateSeatsList(seatName);
+    updateFieldInnerText('seat-resumed', seatResumed);
+    updateFieldInnerText('total-selected-seats', totalSelectedSeat);
+    updateFieldInnerText('total-price', totalPrice);
+    updateFieldInnerText('grand-total', grandTotal);
+}
+
