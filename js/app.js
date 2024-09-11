@@ -69,3 +69,14 @@ function selectSeat(params) {
     updateFieldInnerText('grand-total', grandTotal);
 }
 
+
+// Display Hidden
+function displayHidden(fieldName, className) {
+    if(className === 'Hidden') {
+        fieldName.classList.add('hidden');
+    }
+    else if(className === 'Display') {
+        document.getElementById(fieldName).classList.remove('hidden');
+    }
+}
+
